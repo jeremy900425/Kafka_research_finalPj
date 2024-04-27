@@ -2,7 +2,7 @@ const mqtt = require('mqtt');
 const { performance } = require('perf_hooks');
 const client = mqtt.connect('mqtt://localhost:1883');
 
-const totalMessages = 100;
+const totalMessages = 30000;
 
 client.on('connect', () => {
     console.log('Connected to local MQTT broker');

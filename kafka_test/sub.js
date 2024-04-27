@@ -32,7 +32,7 @@ const consumeMessages = async () => {
       count++;
       totalDelay += delay;
 
-      if (count === 100) {
+      if (count === 30000) {
         console.log(`Average delay: ${totalDelay / count}ms`);
       }
     },
@@ -40,3 +40,6 @@ const consumeMessages = async () => {
 };
 
 consumeMessages();
+
+// 依序3000：502.83ms
+// 依序30000：4663.72ms
